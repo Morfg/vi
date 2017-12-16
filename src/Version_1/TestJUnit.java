@@ -7,9 +7,9 @@ import Version_1.*;
 
 public class TestJUnit {
 	@Test
-	public void TestVideoMain() {//Тестирование VideoMain.java
-		VideoMain t = new VideoMain();
-		if(t.text!="ООМИП")Assert.fail(); //если приравнять к слову оличному от "ООМИП", то будет ошибка
+	public void TestVideoMain() { // РўРµСЃС‚РёСЂРѕРІР°РЅРёРµ VideoMain.java
+		VideoMain t = new VideoMain(); // РРЅРёС†РёР°Р»РёР·РёСЂСѓРµРј СЌРєР·РµРјРїР»СЏСЂ, СЂРµР·РµСЂРІРёСЂРІРёСЂСѓРµРј РїР°РјСЏС‚СЊ
+		if(t.text!="РћРћРњРРџ")Assert.fail(); //РµСЃР»Рё РїСЂРёСЂР°РІРЅСЏС‚СЊ Рє СЃР»РѕРІСѓ РѕР»РёС‡РЅРѕРјСѓ РѕС‚ "РћРћРњРРџ", С‚Рѕ Р±СѓРґРµС‚ РѕС€РёР±РєР°
 		
 	}
 }

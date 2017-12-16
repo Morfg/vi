@@ -7,18 +7,20 @@ import javax.swing.*;
 import javax.swing.JFrame;
 
 public class VideoMain {
-	public static String text="�����";
+	
+	public static String text="ООМИП"; // Указываем значение, которое будет указываться в описании окна
+	
 	public static void main(String args[]) {
-		
-		MyFrame r = new MyFrame(text);
-		r.setVisible(true);
+		/*################Указание значение, параметров для окна программы################*/
+		MyFrame r = new MyFrame(text);  // Инициализируем экземпляр, резервирвируем память
+		r.setVisible(true); // Делаем frame видимым
 		//r.getContentPane().setForeground(Color.yellow); 
-		r.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		r.setSize(450,600);
-		r.setResizable(false); 
-		r.setLocationRelativeTo(null);
-		r.getContentPane().setBackground(Color.BLACK ); 
-		ImageIcon image = new ImageIcon("13.png");
-		  r.setIconImage(image.getImage());
+		r.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Нужно для того чтобы при закрытии окна закрывалась и программа, иначе она останется висеть в процессах
+		r.setSize(450,600); // Размер frame
+		r.setResizable(false); // Запрещаем редактирование размеров frame, чтобы избежать багов
+		r.setLocationRelativeTo(null); // Появление frame в середине
+		r.getContentPane().setBackground(Color.BLACK );  // Указание цвета
+		ImageIcon image = new ImageIcon("13.png"); // Изображение с названием "13.png" отображалось в верху окна, если есть в папке с прокетом.
+		  r.setIconImage(image.getImage()); // Добавление изображения на frame
 	}
 }
