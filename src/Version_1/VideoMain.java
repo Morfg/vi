@@ -15,7 +15,6 @@ public class VideoMain {
 		/*################Указание значение, параметров для окна программы################*/
 		MyFrame r = new MyFrame(text);  // Инициализируем экземпляр, резервирвируем память
 		r.setVisible(true); // Делаем frame видимым
-		//r.getContentPane().setForeground(Color.yellow); 
 		r.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Нужно для того чтобы при закрытии окна закрывалась и программа, иначе она останется висеть в процессах
 		r.setSize(450,600); // Размер frame
 		r.setResizable(false); // Запрещаем редактирование размеров frame, чтобы избежать багов
