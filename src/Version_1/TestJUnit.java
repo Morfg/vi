@@ -10,7 +10,7 @@ public class TestJUnit {
 	public void TestVideoMain() {
 		TestProjectName(); // Выполняем метод TestProjectName
 		TestProjectFirstCamera(); // Выполняем метод TestProjectPng
-		//Test2JUnit SecondCheck = new Test2JUnit() ;
+		//Test2JUnit SecondCheck = new Test2JUnit();
 		//SecondCheck.TestVideoMain2();
 	}
 	public void TestProjectName() { // Тестирование TestProjectName

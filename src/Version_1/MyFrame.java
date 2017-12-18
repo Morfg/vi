@@ -9,7 +9,7 @@ import java.awt.event.*;
 
 public class MyFrame extends JFrame {
 	
-	JButton b1, b2,JButtonDecideAllCameras,JCreateObject, JButtonSaveParam ; //Объявляем переменные типа JButton
+	JButton b1, b2,JButtonDecideAllCameras,JCreateObject, JButtonSaveParam ; // Объявляем переменные типа JButton
 	JLabel JLabelVideoBitrate,JLabelVideoLength, JLabelAudioFrequency, JLabelWithAudio,JLabelBitCapacity,JLabelResult, JLabelFullResult,JLabelResultCameras,JLabelResultCamerasNumber, l3, l4; //Объявляем переменные типа JLabel
 	JTextField JTextFieldVideoBitrate,JTextFieldVideoLength,JTextFieldAudioFrequency,JTextFieldAudioBitCapacity,JTextFieldResult, t2; //Объявляем переменные типа JTextField
 	JComboBox JComboBoxNumberObject; //Объявляем переменные типа JComboBox
