@@ -57,7 +57,7 @@ public class MyFrame extends JFrame {
 		JCheckBoxAudioFile.setBounds(10,170,25,25);// метод setBounds, который отвечает за точное размещение.Методу передаются 4 значения: отступ слева, отступ сверху, длина компонента, высота компонента.
 		JCheckBoxAudioFile.setBackground(Color.black); // Указание цвета
 		
-		JLabelAudioFrequency = new JLabel("Введите частоту дескритизации(Гц)");// резервируем память для объекта JLabelAudioFrequency
+		JLabelAudioFrequency = new JLabel("Введите частоту дискретизации(Гц)");// резервируем память для объекта JLabelAudioFrequency
 		JLabelAudioFrequency.setBounds(10, 200, 250, 25);// метод setBounds, который отвечает за точное размещение.Методу передаются 4 значения: отступ слева, отступ сверху, длина компонента, высота компонента.
 		JLabelAudioFrequency.setForeground(Color.ORANGE); // Указание цвета
 		
