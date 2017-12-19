@@ -18,7 +18,7 @@ public class MyFrame extends JFrame {
 	int ObjectNumberName = 0,j; //Объявляем переменные типа int и задаем значение для переменной ObjectNumberName = 0 ,которое является началом счёта
 	VideoObject[] VideoCamera = new VideoObject[1024]; //Создаем экземпляр класса VideoObject[1024] и возвращает ссылку на вновь созданный объект
 	//boolean BolleanCheckEdit=true;//Создаем переменную типа boolean и задаем ей значение true, не знаю для чего, тк потом она становится false
-	float i, k, CheckEdit=0,VideoBitrate,VideoLength,AudioFrequency,BitCapacity,FullResult,AudioResult,VideoResult,AllCameraResult=0;//Создаем переменные типа float
+	float i, k, CheckEdit=0,VideoBitrate,VideoLength,AudioFrequency,BitCapacity,FullResult,AudioResult,VideoResult,AllCameraResult=0,AllCameraResult2=0;//Создаем переменные типа float
 	eHandler handler = new eHandler(); //Создаем экземпляр класса eHandler и возвращает ссылку на вновь созданный объект
 	public MyFrame(String s) {//Объявляем метод MyFrame
 		
@@ -426,6 +426,7 @@ public class MyFrame extends JFrame {
 				}
 			JLabelResultCamerasNumber.setText(String.valueOf(AllCameraResult+" Мб")); // Вывод подсчёта для всех камер в JLabel "Все созданные камеры"
 			}
+			AllCameraResult2=AllCameraResult;
 			AllCameraResult=0; // Обнулением после того как, подсчитались все камеры.
 			
 			/* ############################

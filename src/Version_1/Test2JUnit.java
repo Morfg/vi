@@ -10,15 +10,24 @@ import org.junit.Test;
 import Version_1.*;
 
 public class Test2JUnit {
+	
+	/*##########Проверяем правильность Создания чекбокса JCheckBoxAudioFile #########*/
 	@Test
-	public void TestVideoMain2() { // Выполняем метод TestVideoMain2
-		TestProjectJCreateObject(); // Выполняем метод TestProjectJCreateObject
-	}
-	public void TestProjectJCreateObject() { // Выполняем метод TestProjectJCreateObject
+	public void TestProjectCheckBox() { // Выполняем метод TestVideoMain2
 		MyFrame test = new MyFrame("Тест"); // Инициализируем экземпляр, резервирвируем память
-		String input = JOptionPane.showInputDialog ("Введите номер камеры которое будет после нажатия на кнопку JCreateObject или 'Добавить камеру'  ") ; // окно ввода 
-		int vvod = Integer.parseInt(input); // Считывание введённого числа
-		test.JCreateObject.doClick(); // Инициализируеся нажатие на кнопку JCreateObject
-		if(test.ObjectNumberName!=vvod)Assert.fail(); //если ошибка, то значит, не работает обработка нажатии на кнопку JCreateObject. Т.е не создалась 2 камера.
+		Boolean CheckboxCount=test.JCheckBoxAudioFile.isSelected(); // присваиваем CheckboxCount значение test.JCheckBoxAudioFile
+		Boolean trueCheck = false; // переменна равна false
+		if(!CheckboxCount.equals(trueCheck))Assert.fail(); // Если ошибка, то значит, что JCheckBoxAudioFile был создан со значением true или вообще не создан
 	}
+	
+	/*##########Проверяем очистку поля JTextFieldVideoBitrate при создании новой камеры #########*/ 
+	@Test
+	public void TestProjectClearTextField() { // Выполняем метод TestProjectJCreateObject
+		MyFrame test = new MyFrame("Тест"); // Инициализируем экземпляр, резервирвируем память
+		String input = JOptionPane.showInputDialog ("Введите текст для прокерки очистки. Если ошибки нет, то всё работает как надо.") ; // окно ввода 
+		test.JTextFieldVideoBitrate.setText(input);// Заполняем поле JTextFieldVideoBitrate текстом input
+		test.JCreateObject.doClick(); // Инициализируеся нажатие на кнопку JCreateObject
+		if ((test.JTextFieldVideoBitrate).getText().length()!=1)Assert.fail(); // Если ошибка, то поле не отчистилось
+	}
+	
 }
