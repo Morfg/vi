@@ -1,7 +1,6 @@
 package Version_1;
 
 import javax.swing.JOptionPane;
-
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -34,8 +33,6 @@ public class Test4JUnit {
 		if(test.FullResult!=FullResult)Assert.fail(); //если ошибка, то значит, неверный подсчёт
 	}
 	
-	
-
 	/*##########Проверяем создание 1-ой камеры, которая создаётся при запуске программы#########*/
 	@Test
 	public void TestProjectFirstCamera() { // Тестирование TestProjectFirstCamera

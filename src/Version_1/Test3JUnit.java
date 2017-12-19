@@ -1,7 +1,6 @@
 package Version_1;
 
 import javax.swing.JOptionPane;
-
 import org.junit.Assert;
 import org.junit.Test;
 

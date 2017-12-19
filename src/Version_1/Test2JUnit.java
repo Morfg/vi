@@ -1,12 +1,9 @@
 package Version_1;
 
 import java.util.Scanner;
-
 import javax.swing.JOptionPane;
-
 import org.junit.Assert;
 import org.junit.Test;
-
 import Version_1.*;
 
 public class Test2JUnit {
