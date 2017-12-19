@@ -19,10 +19,10 @@ public class Test4JUnit {
 		float Dlit = Integer.parseInt(InputDlit); // Считывание введённого числа
 		test.JTextFieldVideoLength.setText(InputDlit);// Заполняем поле JTextFieldVideoLength
 
-		String InputAudioFrequency = JOptionPane.showInputDialog ("Введите частотут дескритизации") ; // окно ввода 
+		String InputAudioFrequency = JOptionPane.showInputDialog ("Введите частоту дискретизации") ; // окно ввода 
 		float AudioFrequency = Integer.parseInt(InputAudioFrequency); // Считывание введённого числа
 		test.JTextFieldAudioFrequency.setText(InputAudioFrequency); // Заполняем поле JTextFieldVideoBitrate
-		String InputAudioBitCapacity = JOptionPane.showInputDialog ("Введите разрадность регистра") ; // окно ввода 
+		String InputAudioBitCapacity = JOptionPane.showInputDialog ("Введите разрядность регистра") ; // окно ввода 
 		float AudioBitCapacity = Integer.parseInt(InputAudioBitCapacity); // Считывание введённого числа
 		test.JTextFieldAudioBitCapacity.setText(InputAudioBitCapacity);// Заполняем поле JTextFieldVideoLength
 		

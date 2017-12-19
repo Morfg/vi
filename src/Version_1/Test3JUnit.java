@@ -24,10 +24,10 @@ public class Test3JUnit {
 	@Test
 	public void TestProjectGoodCount3() { // Выполняем метод TestProjectJCreateObject
 		MyFrame test = new MyFrame("Тест"); // Инициализируем экземпляр, резервирвируем память
-		String InputBitr = JOptionPane.showInputDialog ("Введите битрейт") ; // окно ввода 
+		String InputBitr = JOptionPane.showInputDialog ("Введите битрейт видео") ; // окно ввода 
 		float Bitr = Integer.parseInt(InputBitr); // Считывание введённого числа
 		test.JTextFieldVideoBitrate.setText(InputBitr); // Заполняем поле JTextFieldVideoBitrate
-		String InputDlit = JOptionPane.showInputDialog ("Введите длительность") ; // окно ввода 
+		String InputDlit = JOptionPane.showInputDialog ("Введите длительность видео") ; // окно ввода 
 		float Dlit = Integer.parseInt(InputDlit); // Считывание введённого числа
 		test.JTextFieldVideoLength.setText(InputDlit);// Заполняем поле JTextFieldVideoLength
 

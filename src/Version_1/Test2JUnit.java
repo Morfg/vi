@@ -24,10 +24,10 @@ public class Test2JUnit {
 	@Test
 	public void TestProjectClearTextField() { // Выполняем метод TestProjectJCreateObject
 		MyFrame test = new MyFrame("Тест"); // Инициализируем экземпляр, резервирвируем память
-		String input = JOptionPane.showInputDialog ("Введите текст для прокерки очистки. Если ошибки нет, то всё работает как надо.") ; // окно ввода 
+		String input = JOptionPane.showInputDialog ("Введите текст для проверки очистки. Если ошибки нет, то всё работает как надо.") ; // окно ввода 
 		test.JTextFieldVideoBitrate.setText(input);// Заполняем поле JTextFieldVideoBitrate текстом input
 		test.JCreateObject.doClick(); // Инициализируеся нажатие на кнопку JCreateObject
-		if ((test.JTextFieldVideoBitrate).getText().length()!=1)Assert.fail(); // Если ошибка, то поле не отчистилось
+		if(!(test.JTextFieldVideoBitrate).getText().equals("0"))Assert.fail();// Если ошибка, то поле не отчистилось
 	}
 	
 }
